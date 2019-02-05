@@ -7,18 +7,25 @@ class Roshambo
 
   def go
 
+
     if @hand_1 == "rock" && @hand_2 == "scissors"
-      return "#{@hand_1.capitalize} wins!"
+      result = 1
+      return "Player #{result} wins with #{@hand_1.capitalize}!"
     elsif @hand_1 == "rock" && @hand_2 == "paper"
-      return "#{@hand_2.capitalize} wins!"
+      result = 2
+      return "Player #{result} wins with #{@hand_2.capitalize}!"
     elsif @hand_1 == "paper" && @hand_2 == "rock"
-      return "#{@hand_1.capitalize} wins!"
+      result = 1
+      return "Player #{result} wins with #{@hand_1.capitalize}!"
     elsif @hand_1 == "paper" && @hand_2 == "scissors"
-      return "#{@hand_2.capitalize} wins!"
+      result = 2
+      return "Player #{result} wins with #{@hand_2.capitalize}!"
     elsif @hand_1 == "scissors" && @hand_2 == "rock"
-      return "#{@hand_2.capitalize} wins!"
+      result = 2
+      return "Player #{result} wins with #{@hand_2.capitalize}!"
     elsif @hand_1 == "scissors" && @hand_2 == "paper"
-      return "#{@hand_1.capitalize} wins!"
+      result = 1
+      return "Player #{result} wins with #{@hand_1.capitalize}!"
     elsif @hand_1 == @hand_2
       return "Draw!"
     else

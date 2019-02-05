@@ -14,19 +14,19 @@ class TestRoshambo < Minitest::Test
   end
 
   def test_rock_win
-    assert_equal("Paper wins!", @game_1.go)
+    assert_equal("Player 2 wins with Paper!", @game_1.go)
   end
 
   def test_scissors_win__paper
-    assert_equal("Scissors wins!", @game_2.go)
+    assert_equal("Player 1 wins with Scissors!", @game_2.go)
   end
 
   def test_rock_win__scissors
-    assert_equal("Rock wins!", @game_3.go)
+    assert_equal("Player 1 wins with Rock!", @game_3.go)
   end
 
   def test_paper_win__rock
-    assert_equal("Paper wins!", @game_4.go)
+    assert_equal("Player 1 wins with Paper!", @game_4.go)
   end
 
   def test_draw
